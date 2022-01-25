@@ -8,16 +8,26 @@ mensagem dizendo se a pessoa tem acesso a linha de crédito, se sim, qual linha
 de crédito.
 */
 
-let nome = "carlitos teves"
-let servidor = false;
+let nome = "Carlos";
+let servidor = true;
 let professor = true;
 
-
 if (servidor === true && professor === true) {
-    console.log(`Parabéns ${nome}! Você tem acesso a nossa linha de crédito especial! `)
-}else if (servidor === false && professor === true) {
-    console.log(`${nome} infelizmente você não tem uma linha de crédito disponível.`)
-}else if (servidor === true && professor === false) {
-    consoleconsole.log(`${nome}, você tem acesso a nossa linha de crédito para servidores.`);
+  console.log(
+    "Parabéns" +
+      " " +
+      nome +
+      "!" +
+      +"Você tem acesso a nossa linha de crédito especial!"
+  );
+} else if (servidor === false && professor === true) {
+  console.log(
+    nome + "infelizmente você não tem uma linha de crédito disponível."
+  );
+} else if (servidor === true && professor === false) {
+  console.log(
+    nome + "," + "você tem acesso a nossa linha de crédito para servidores."
+  );
+} else if (servidor === false && professor === false) {
+  console.log(nome + "," + "você não tem acessa a nenhuma linha de crédito");
 }
-

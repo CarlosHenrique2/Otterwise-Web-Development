@@ -4,9 +4,32 @@ Crie uma função que recebe como argumento um valor em segundos,
 calcula e retorne uma string formatada HH:MM:SS (horas:minutos:segundos) .
 */
 
-var date = new Date(null); // instanciando uma variavel do tipo data com valor nulo
-date.setSeconds(33567); // dizendo os segundos aqui 
-var result = date.toISOString().substr(11, 8); // o subtrs é para filtar uma quantidade de informções que não vão ser uteis 
+function ContarHora(H) {
+  let hora = 00;
+  let minuto = 00;
+  let segundo = 00;
 
-console.log(result)
+  if (H >= 0 && H < 10) {
+    segundo = "0" + H;
+    console.log(hora + ":" + minuto + ":" + segundo);
+  }
 
+  if (H >= 0 && H < 59) {
+    segundo = H;
+  }
+
+  if (H >= 60 && H < 3600) {
+    minuto = Math.floor(H / 60);
+    segundo = H % 60;
+    console.log(hora + ":" + minuto + ":" + segundo);
+  }
+
+  if (H >= 3600) {
+    hora = Math.floor(H / 3600);
+    minuto = Math.floor((H % 3600) / 60);
+    segundo = (H % 3600) % 60;
+    console.log(hora + ":" + minuto + ":" + segundo);
+  }
+}
+
+ContarHora(600);

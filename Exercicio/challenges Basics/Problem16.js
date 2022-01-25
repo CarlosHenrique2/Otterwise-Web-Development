@@ -5,13 +5,16 @@ programa deve mostrar uma mensagem “São Múltiplos” ou “Não são Múltip
 indicando se os valores recebidos como entrada são múltiplos entre si.
 */
 
-function multiplos (a,b) {
-   if (a % b == 0) {
-        return "São Múltiplos"
-   } else if (b % a == 0) {
-        return "Não são Múltiplos"
-   }
+function multiplos(a, b) {
+  if (a % b === 0) {
+    return "São Múltiplos";
+  } else if (b % a === 0) {
+    return "São Múltiplos";
+  } else if (a % b > 0) {
+    return "não são Múltiplos";
+  } else if (b % a > 0) {
+    return "não são Múltiplos";
+  }
 }
 
-
-console.log(multiplos(25,5))
+console.log(multiplos(8, 5));

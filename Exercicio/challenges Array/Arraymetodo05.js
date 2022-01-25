@@ -4,4 +4,4 @@ Escreva um programa que imprime na tela o nome de todos os usuários ativos
 Escreva um programa que imprime na tela quantos usuários não estão ativos
 Escreva um programa que imprime na tela se existe algum usuário ativo
 Escreva um programa que imprime na tela o array ordenado por id em ordem crescente 
-*/ 
+*/

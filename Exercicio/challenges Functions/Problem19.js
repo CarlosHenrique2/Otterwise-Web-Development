@@ -7,14 +7,12 @@ no console:
 x deve ser substituído pelo número passado como argumento.
  */
 
-function checkSignal (x) {
-    if (x > 0) {
-        return "x é positivo"
-    } else {
-        return "x é negativo"
-    }
-
+function checkSignal(x) {
+  if (x > 0) {
+    return "x é positivo";
+  } else if (x < 0) {
+    return "x é negativo";
+  }
 }
 
-
-console.log(checkSignal(-1)) 
+console.log(checkSignal(-1));

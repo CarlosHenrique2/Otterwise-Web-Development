@@ -11,27 +11,29 @@ necessárias.
 5 - exemplo (5) notas de R$ 100,00
 */
 
+const dividir = 1111;
 
-let x = 1000;
+function desconstruir(dividir) {
+  let cem = Math.floor(dividir / 100);
+  let sobra = dividir % 100;
+  let cinq = Math.floor(sobra / 50);
+  sobra = sobra % 50;
+  let vinte = Math.floor(sobra / 20);
+  sobra = sobra % 20;
+  let dez = Math.floor(sobra / 10);
+  sobra = sobra % 10;
+  let cinco = Math.floor(sobra / 5);
+  sobra = sobra % 5;
+  let dois = Math.floor(sobra / 2);
+  sobra = sobra % 2;
+  let um = Math.floor(sobra / 1);
+  console.log(cem + " notas de R$ 100,00");
+  console.log(cinq + " notas de R$ 50,00");
+  console.log(vinte + " notas de R$ 20,00");
+  console.log(dez + " notas de R$ 10,00");
+  console.log(cinco + " notas de R$ 5,00");
+  console.log(dois + " notas de R$ 2,00");
+  console.log(um + " notas de R$ 1,00");
+}
 
-let notas = x / 100;
- console.log(`${notas} nota(s) de R$ ${100},00`)
-x = x % 100;
-
-notas = x / 50;
-console.log(`${notas} nota(s) de R$ ${50},00`)
-
-notas = x / 20;
-console.log(`${notas} nota(s) de R$ ${20},00`)
-
-notas = x / 10;
-console.log(`${notas} nota(s) de R$ ${10},00`)
-
-notas = x / 5;
-console.log(`${notas} nota(s) de R$ ${5},00`)
-
-notas = x / 2;
-console.log(`${notas} nota(s) de R$ ${2},00`)
-
-notas = x / 1;
-console.log(`${notas} nota(s) de R$ ${1},00`)
+console.log(desconstruir(dividir));

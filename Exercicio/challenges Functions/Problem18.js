@@ -12,9 +12,18 @@ let valueOne = 1;
 let valueTwo = 2;
 let valueThree = 3;
 
-valueTwo = valueThree
-valueThree = valueOne
+console.log(valueOne);
+console.log(valueTwo);
+console.log(valueThree);
 
-   console.log(valueOne)
-   console.log(valueTwo)
-   console.log(valueThree)
+let othervalue0;
+
+othervalue0 = valueTwo;
+valueTwo = valueThree;
+valueThree = valueOne;
+valueOne = valueTwo;
+valueOne = othervalue0;
+
+console.log(valueOne);
+console.log(valueTwo);
+console.log(valueThree);

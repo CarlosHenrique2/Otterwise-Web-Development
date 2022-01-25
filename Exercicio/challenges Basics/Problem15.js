@@ -4,20 +4,26 @@ Elabore um programa que receba três valores como entrada e mostre eles
 em ordem crescente no console
 */
 
-function crescente (a,b,c) {
-    if (a > b && a > c) {
-        if (b > c && b < a) {
-            return a,b,c
-        }
-    }else if (b > a && b > c) {
-        if (c > a && c < b) {
-            return b,c,a
-        }
-    }else if (c > a && c > b) {
-        if (a > b && a < c) {
-            return c,a,b
-        }
+function crescente(c, b, a) {
+  if (a < b && a < c) {
+    if (b < c) {
+      console.log(a, b, c);
+    } else {
+      console.log(a, c, b);
     }
+  } else if (b < a && b < c) {
+    if (a < c) {
+      console.log(b, a, c);
+    } else {
+      console.log(b, c, a);
+    }
+  } else if (c < a && c < b) {
+    if (b < a) {
+      console.log(c, b, a);
+    } else {
+      console.log(c, a, b);
+    }
+  }
 }
 
-console.log(crescente(10,11,12))
+crescente(11, 10, 12);

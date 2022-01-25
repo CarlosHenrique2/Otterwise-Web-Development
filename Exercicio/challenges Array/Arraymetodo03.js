@@ -5,11 +5,9 @@ com seu nome e imprima no console na ordem inversa.
 [{name: “joao”, {name: “pedro”}}] 
 */
 
-let nome = [{name: "joao", name: "pedro"}];
+let nome = [{ name: "joao", name: "pedro" }];
 
-for (let i = 0; i < nome.length; i++) {
-    
-}
+for (let i = 0; i < nome.length; i++) {}
 
-nome.push("carlos Henrique")
-console.log(nome)
+nome.push("carlos Henrique");
+console.log(nome);

@@ -4,9 +4,7 @@ Faça um programa que armazene em duas variáveis distintas, um nome e
 um sobrenome, e imprima no console o nome completo.
 */
 
-let primeironome = "Carlos"
-let segundonome = "Henrique"
+let primeironome = "Carlos";
+let segundonome = "Henrique";
 
-
-
-console.log(`${primeironome} ${segundonome}`)
+console.log(primeironome + " " + segundonome);

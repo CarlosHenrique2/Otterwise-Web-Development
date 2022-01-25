@@ -9,9 +9,11 @@ proposta a pessoa deve aceitar.
 */
 
 const CLTSalario = 5000;
+const decimo;
+const ferias;
+const descontoBeneficios;
 const PJSalario = 5000;
-const beneficios = 700;
-const descontos = 8;
+const descontos = 0.08;
 
 
 const FGTS = (CLTSalario * 8) / 100;

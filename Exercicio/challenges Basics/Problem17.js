@@ -11,17 +11,15 @@ let inicio = 22;
 let termino = 6;
 let duração = 24;
 
-if (inicio >=24) {
-    console.log(`Hora inicio invalida`)
-}else if (termino >=24) {
-    console.log(`Hora inicio invalida`)
+if (inicio >= 24) {
+  console.log("Hora inicio invalida");
+} else if (termino >= 24) {
+  console.log("Hora Termino invalida");
 }
 if (inicio > termino) {
-    duração = 24 - inicio + termino;
-
+  duração = 24 - inicio + termino;
 } else {
-    duração = termino - inicio;
+  duração = termino - inicio;
 }
 
-
-console.log(`Tempo de Duração:${duração} Horas`)
+console.log("Tempo de Duração:" + " " + duração + ":" + 0 + 0 + " " + "Horas");

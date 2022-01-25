@@ -4,10 +4,9 @@ Atribua a uma constante a soma das strings "Otter" e "wise" e imprima no
 console seu valor.
 */
 
-let primera = "Otter"
-let segunda = "wise"
+let primera = "Otter";
+let segunda = "wise";
 
 const soma = primera + segunda;
 
-console.log(`${soma}`)
-
+console.log(primera + segunda);

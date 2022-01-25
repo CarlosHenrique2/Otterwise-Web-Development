@@ -12,12 +12,13 @@ o projeto, faça um programa que tenha como entrada variável a quantidade de
 horas e como saída no console o preço que custará esse projeto
 */
 
-
 let horas = 160;
-let preçohora = 10;
+let precohora = 10;
 const custos = 500;
 const salario = 1000;
 
-const projeto = preçohora * horas;
+function project() {
+  return (projeto = precohora * horas);
+}
 
-console.log(`esse projeto custará ${projeto}`)
+console.log(project());
