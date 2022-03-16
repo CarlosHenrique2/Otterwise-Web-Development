@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quadrado-verde {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+}
+
+.quadrado-vermelho {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}

@@ -1,0 +1,33 @@
+.Tela {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.boxone {
+  display: flex;
+}
+
+.box1 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin: 5px;
+}
+
+.box2 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin: 5px;
+}
+
+.box3 {
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin: 5px;
+}
